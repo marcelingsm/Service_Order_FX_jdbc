@@ -27,10 +27,9 @@ public class ClientDaoJDBC implements ClientDao  {
         try {
             st = conn.prepareStatement(
                     "INSERT INTO client "
-                    + "(cpf, name, endereco, telefone, email) "
+                    + "(cpf, nome, endereco, telefone, email) "
                     + "VALUES "
-                    + "(?, ?, ?, ?, ?)",
-                    Statement.RETURN_GENERATED_KEYS);
+                    + "(?, ?, ?, ?, ?)");
 
             st.setInt(1, obj.getCpf());
             st.setString(2, obj.getName());
@@ -40,9 +39,8 @@ public class ClientDaoJDBC implements ClientDao  {
 
             int rowsAffected = st.executeUpdate();
 
-            if (rowsAffected > 0) {
+            if (rowsAffected == 0) {
              throw new DbException("ERRO! No rows affected!");
-               
             }
         } catch (SQLException e) {
             throw new DbException(e.getMessage());
@@ -80,7 +78,7 @@ public class ClientDaoJDBC implements ClientDao  {
     public void deleteById(Integer cpf){
          PreparedStatement st = null;
         try{
-            st = conn.prepareStatement("DELETE FROM client WHERE Id = ?");
+            st = conn.prepareStatement("DELETE FROM client WHERE cpf = ?");
             
             st.setInt(1, cpf);
             
@@ -99,7 +97,7 @@ public class ClientDaoJDBC implements ClientDao  {
         ResultSet rs = null;
         try {
             st = conn.prepareStatement(
-                    "SELECT * FROM department WHERE Id = ?");
+                    "SELECT * FROM department WHERE cpf = ?");
 
             st.setInt(1, cpf);
             rs = st.executeQuery();

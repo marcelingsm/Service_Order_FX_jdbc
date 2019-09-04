@@ -1,14 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package model.dao;
 
-/**
- *
- * @author USER
- */
+import db.DB;
+import model.dao.impl.ClientDaoJDBC;
+
 public class DaoFactory {
-    
+     public static ClientDao creatingSellerDao(){
+        return new ClientDaoJDBC(DB.getConnection());
+    }
 }
