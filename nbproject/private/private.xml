@@ -2,14 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/USER/Documents/ServiceOrdem/src/db/DbException.java</file>
-            <file>file:/C:/Users/USER/Documents/ServiceOrdem/src/model/dao/impl/ClientDaoJDBC.java</file>
-            <file>file:/C:/Users/USER/Documents/ServiceOrdem/src/serviceordem/main.java</file>
-            <file>file:/C:/Users/USER/Documents/ServiceOrdem/src/model/entites/Client.java</file>
-            <file>file:/C:/Users/USER/Documents/ServiceOrdem/src/db/DbIntegrityException.java</file>
-            <file>file:/C:/Users/USER/Documents/ServiceOrdem/src/model/dao/ClientDao.java</file>
-            <file>file:/C:/Users/USER/Documents/ServiceOrdem/src/db/DB.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

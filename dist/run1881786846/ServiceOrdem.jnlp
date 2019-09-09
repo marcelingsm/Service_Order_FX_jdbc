@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="ServiceOrdem.jar" size="13818" download="eager" />
+    <jar href="ServiceOrdem.jar" size="12240" download="eager" />
     <jar href="lib\mysql-connector-java-5.1.47.jar" size="1007502" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ServiceOrdem" >
